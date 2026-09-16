@@ -410,7 +410,7 @@ The application will start on the configured local port.
 For example:
 
 ```text
-http://localhost:3000
+http://localhost:3001
 ```
 
 ---

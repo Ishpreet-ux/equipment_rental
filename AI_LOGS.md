@@ -1511,3 +1511,13 @@ https://ideal-orbit-697pv54qrgwrcrw64-3000.app.github.dev
 ```
 
 The port was configured as private, so the URL must be opened while signed into GitHub. The URL was opened in the browser and the application was ready to use.
+
+### 5. Add active loan transfers
+
+**User:** Requested that an active loan be transferable to another borrower while preserving the original due date and equipment availability.
+
+**Assistant:** Confirmed that the backend already updated only the loan borrower and recorded transfer history. Added borrower selection and **Transfer** controls to the active-loans dashboard. The transfer keeps the same physical unit and due date, so the equipment remains unavailable during the transfer.
+
+Also fixed dashboard initialization so borrower options load before loan transfer controls render, and added responsive styling for the new controls.
+
+Validated the transfer API end to end: the borrower changed, while `unit_id` and `due_date` remained unchanged. The test database state was restored afterward.

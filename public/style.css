@@ -97,6 +97,31 @@ button:hover {
     align-items: center;
 }
 
+.loan-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+@media (max-width: 700px) {
+    .loan {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .loan-actions {
+        justify-content: stretch;
+    }
+
+    .loan-actions select,
+    .loan-actions button {
+        flex: 1 1 140px;
+    }
+}
+
 .overdue {
     border-left: 5px solid #c62828;
 }
