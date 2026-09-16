@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AV Room Equipment Rental</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>AV Room</h1>
+    <p>Equipment Rental Dashboard</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Equipment Availability</h2>
+
+        <div id="equipment" class="grid"></div>
+    </section>
+
+    <section class="panel">
+
+        <h2>Borrow Equipment</h2>
+
+        <form id="borrowForm">
+
+            <label>Equipment</label>
+
+            <select id="equipmentSelect" required></select>
+
+            <label>Borrower</label>
+
+            <select id="borrowerSelect" required></select>
+
+            <label>Number of Days</label>
+
+            <input
+                type="number"
+                id="days"
+                value="3"
+                min="1"
+                max="30"
+                required
+            >
+
+            <button type="submit">
+                Borrow Equipment
+            </button>
+
+        </form>
+
+        <p id="borrowMessage"></p>
+
+    </section>
+
+    <section>
+
+        <h2>Active Loans</h2>
+
+        <div id="loans"></div>
+
+    </section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "equipment_rental",
+  "version": "1.0.0",
+  "description": "To build something to track the gear and nudge people to return equipment.",
+  "main": "index.js",
+  "scripts": {
+  "start": "node server.js",
+  "seed": "node seed.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ishpreet-ux/equipment_rental.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ishpreet-ux/equipment_rental/issues"
+  },
+  "homepage": "https://github.com/Ishpreet-ux/equipment_rental#readme",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1"
+  }
+}
